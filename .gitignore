@@ -54,3 +54,4 @@ dkms.conf
 # Code editor
 .*
 Bin/
+Build/
