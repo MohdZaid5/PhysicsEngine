@@ -1,5 +1,6 @@
 
 #include <math.h>
+#include <assert.h>
 #include "vectors.h"
 
 Vector2 AddVectors(Vector2 _vec, Vector2 _to)
@@ -28,6 +29,7 @@ Vector2 ScaleVector(Vector2 _vec, float _by)
 
 Vector2 DivideVector(Vector2 _vec, float _by)
 {
+    assert(_by != 0);
     return (Vector2) {
         .x = _vec.x / _by,
         .y = _vec.y / _by
@@ -71,7 +73,7 @@ float Distance(Vector2 _vec, Vector2 _from)
 float AngleBetween(Vector2 _vec1, Vector2 _vec2)
 {
     Vector2 diffVector = SubtractVectors( _vec1, _vec2);
-    return tanh(diffVector.y/diffVector.x);
+    return AngleOf(diffVector);
 }
 
 float AngleOf(Vector2 _vec)
