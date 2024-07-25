@@ -53,5 +53,5 @@ dkms.conf
 
 # Code editor
 .*
-Bin/
-Build/
+Bin
+Build
