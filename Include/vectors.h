@@ -149,6 +149,18 @@ float Distance(Vector2 _vec, Vector2 _from);
 float AngleBetween(Vector2 _vec1, Vector2 _vec2);
 
 /**
+ * @brief Calculates the angle of a 2D vector from the positive x-axis.
+ *
+ * This function computes the angle in radians between the positive x-axis and the vector
+ * represented by the `Vector2` structure. The angle is measured counterclockwise from the
+ * x-axis. The angle is returned as a floating-point value.
+ *
+ * @param _vec The `Vector2` structure representing the vector whose angle is to be calculated.
+ * @return The angle of the vector in radians. The angle is in the range [0, 2π).
+ */
+float AngleOf(Vector2 _vec);
+
+/**
  * @brief Projects one vector onto another.
  *
  * Vector projection is the operation of projecting one vector onto another vector. This results in a vector that represents the component of the first vector in the direction of the second vector.

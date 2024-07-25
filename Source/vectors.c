@@ -74,6 +74,11 @@ float AngleBetween(Vector2 _vec1, Vector2 _vec2)
     return tanh(diffVector.y/diffVector.x);
 }
 
+float AngleOf(Vector2 _vec)
+{
+    return ( _vec.x == 0 ) ? (3.14159/2)*((_vec.y > 0) ? 1 : -1) : tanh(_vec.y/_vec.x);
+}
+
 Vector2 ProjectVector(Vector2 _vec, Vector2 _onto)
 {
     float scaleFactor = DotProduct(_vec, _onto)/MagnitudeSquared(_onto);
