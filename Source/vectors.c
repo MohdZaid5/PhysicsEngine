@@ -1,7 +1,8 @@
 
 #include <math.h>
 #include <assert.h>
-#include "vectors.h"
+
+#include "..\Include\vectors.h"
 
 Vector2 AddVectors(Vector2 _vec, Vector2 _to)
 {
