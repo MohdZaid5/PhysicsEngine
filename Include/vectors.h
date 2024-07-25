@@ -30,28 +30,27 @@ typedef Vector2 Point;
 
 #pragma region Vector Operations
 
-
 /**
  * @brief Adds two vectors component-wise.
  *
  * This function calculates the sum of two vectors by adding their corresponding components.
  *
  * @param _vec The first vector to be added.
- * @param _with The second vector to be added.
- * @return A new vector that is the result of adding _vec and _with.
+ * @param _to The second vector to be added.
+ * @return A new vector that is the result of adding _vec _to another.
  */
-Vector2 AddVectors(Vector2 _vec, Vector2 _with);
+Vector2 AddVectors(Vector2 _vec, Vector2 _to);
 
 /**
  * @brief Subtracts the second vector from the first vector component-wise.
  *
  * This function calculates the difference between two vectors by subtracting the components of the second vector from the corresponding components of the first vector.
  *
- * @param _vec The vector from which _with is subtracted.
- * @param _with The vector to be subtracted.
- * @return A new vector that is the result of subtracting _with from _vec.
+ * @param _vec The vector from which _from is subtracted.
+ * @param _from The vector to be subtracted.
+ * @return A new vector that is the result of subtracting _from another _vec.
  */
-Vector2 SubtractVectors(Vector2 _vec, Vector2 _with);
+Vector2 SubtractVectors(Vector2 _vec, Vector2 _from);
 
 /**
  * @brief Scales a vector by a scalar.
@@ -60,7 +59,7 @@ Vector2 SubtractVectors(Vector2 _vec, Vector2 _with);
  *
  * @param _vec The vector to be scaled.
  * @param _by The scalar value to multiply the vector by.
- * @return A new vector that is the result of scaling _vec by _by.
+ * @return A new vector that is the result of scaling _vec _by.
  */
 Vector2 ScaleVector(Vector2 _vec, float _by);
 
@@ -71,7 +70,7 @@ Vector2 ScaleVector(Vector2 _vec, float _by);
  *
  * @param _vec The vector to be divided.
  * @param _by The scalar value to divide the vector by.
- * @return A new vector that is the result of dividing _vec by _by.
+ * @return A new vector that is the result of dividing _vec _by.
  */
 Vector2 DivideVector(Vector2 _vec, float _by);
 
@@ -82,7 +81,7 @@ Vector2 DivideVector(Vector2 _vec, float _by);
  *
  * @param _vec The first vector.
  * @param _with The second vector.
- * @return The dot product of _vec and _with.
+ * @return The dot product of _vec _with.
  */
 float DotProduct(Vector2 _vec, Vector2 _with);
 
@@ -93,7 +92,7 @@ float DotProduct(Vector2 _vec, Vector2 _with);
  *
  * @param _vec The first vector.
  * @param _with The second vector.
- * @return The scalar cross product of _vec and _with.
+ * @return The scalar cross product of _vec _with.
  */
 float CrossProduct(Vector2 _vec, Vector2 _with);
 
