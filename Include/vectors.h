@@ -1,6 +1,8 @@
 #ifndef VECTORS
 #define VECTORS
 
+#pragma region TypeDefinitions for Vector or Points
+
 #ifndef RAYLIB_H
 
     /**
@@ -23,5 +25,10 @@
 * `Point` is a typedef for `Vector2` and is used interchangeably to represent a point in 2D space.
 */
 typedef Vector2 Point;
+
+#pragma endregion
+
+#pragma region Vector Operations
+#pragma endregion
 
 #endif
