@@ -1,5 +1,5 @@
 
-all: prepare program run
+all: prepare vectors program run
 
 prepare:
 	mkdir -p Bin
@@ -11,8 +11,8 @@ program: program.c
 vectors: Source\vectors.c
 	gcc -c Source\vectors.c -o Bin\vectors.o
 
-run: Bin\program.exe
-	.\Bin\program.exe
+run: Build\program.exe
+	.\Build\program.exe
 
 clean:
 	rm -r Bin
