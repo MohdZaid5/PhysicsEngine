@@ -17,5 +17,11 @@
 
 #endif
 
+/**
+* @brief Alias for `Vector2` representing a point in 2D space.
+*
+* `Point` is a typedef for `Vector2` and is used interchangeably to represent a point in 2D space.
+*/
+typedef Vector2 Point;
 
 #endif
